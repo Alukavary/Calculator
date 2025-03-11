@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:configChanges="orientation|screenSize"
+    android:fitsSystemWindows="true"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        android:textColor="@color/calculator_light_gray"
+        android:gravity="end|center_vertical"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:ellipsize="start"
+        />
+    <HorizontalScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:gravity="end"
+        android:textSize="40sp"
+        android:textColor="@color/calculator_text"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        />
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp">
+
+<LinearLayout
+    style="@style/buttonRow">
+
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="AC"
+        android:layout_weight="2"
+        android:onClick="allClearAction"
+        android:background="@drawable/gray_operator_button"
+        />
+
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="⌫"
+        android:onClick="backspace"
+        android:background="@drawable/gray_operator_button"
+
+        />
+
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="/"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    style="@style/buttonRow">
+
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="7"
+        />
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="8"
+        />
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="9"
+        />
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="*"
+        />
+</LinearLayout>
+
+
+<LinearLayout
+    style="@style/buttonRow">
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="4"
+        />
+     <android.widget.Button
+
+    style="@style/buttonNumberGrey"
+        android:text="5"
+        />
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="6"
+        />
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="-"
+        />
+</LinearLayout>
+
+<LinearLayout
+    style="@style/buttonRow">
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="1"
+        />
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="2"
+        />
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="3"
+        />
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="+"
+        />
+</LinearLayout>
+
+<LinearLayout
+    style="@style/buttonRow">
+
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:layout_weight="2"
+        android:text="0" />
+
+    <android.widget.Button
+        style="@style/buttonNumberGrey"
+        android:text="."
+        />
+
+    <android.widget.Button
+        style="@style/buttonOperatorOrange"
+        android:text="="
+        android:onClick="equalsAction"
+        />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

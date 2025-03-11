@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calculator_orange">#FFA500</color> <!-- Оранжевый -->
+    <color name="calculator_dark_gray">#333333</color> <!-- Темно-серый -->
+    <color name="calculator_light_gray">#AAAAAA</color> <!-- Светло-серый -->
+    <color name="calculator_background">#121212</color> <!-- Фон в темной теме -->
+    <color name="calculator_text">#FFFFFF</color> <!-- Белый текст -->
+</resources>
