@@ -6,7 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1C1C1C"
+    android:background="#4C7FAB"
+
     android:orientation="vertical"
     android:gravity="bottom"
     android:configChanges="orientation|screenSize"
@@ -25,6 +26,8 @@
         android:textSize="30sp"
         android:singleLine="true"
         android:ellipsize="start"
+        android:fontFamily="casual"
+
         />
     <HorizontalScrollView
         android:id="@+id/scrollable"
@@ -42,9 +45,11 @@
         android:singleLine="true"
         android:gravity="end"
         android:textSize="40sp"
+        android:background="@drawable/border_layout"
         android:textColor="@color/calculator_text"
-        android:textStyle="bold"
+        android:fontFamily="casual"
         android:textAlignment="textEnd"
+        android:layout_marginBottom="5dp"
         />
     </HorizontalScrollView>
 
@@ -61,15 +66,18 @@
 
     <android.widget.Button
         style="@style/buttonOperatorOrange"
-        android:text="AC"
         android:layout_weight="2"
-        android:onClick="allClearAction"
         android:background="@drawable/gray_operator_button"
-        />
+        android:fontFamily="casual"
+        android:onClick="allClearAction"
+        android:text="AC"
+        android:textStyle="" />
 
     <android.widget.Button
         style="@style/buttonOperatorOrange"
         android:text="⌫"
+        android:fontFamily="casual"
+
         android:onClick="backspace"
         android:background="@drawable/gray_operator_button"
 

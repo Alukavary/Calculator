@@ -5,4 +5,11 @@
     <color name="calculator_light_gray">#AAAAAA</color> <!-- Светло-серый -->
     <color name="calculator_background">#121212</color> <!-- Фон в темной теме -->
     <color name="calculator_text">#FFFFFF</color> <!-- Белый текст -->
+    <color name="button_text_green">#B490ED</color>
+    <color name="button_bg_green">#87EB84</color>
+    <color name="button_text_red">#681604</color>
+    <color name="button_bg_red">#FF6355</color>
+    <color name="background">#4C7FAB</color>
+    <color name="btn_light">#74D3C5</color>
+    <color name="btn_dark">#0D403A</color>
 </resources>

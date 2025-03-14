@@ -5,7 +5,7 @@ import org.mozilla.javascript.Context
 import org.mozilla.javascript.Scriptable
 
 
-open class ViewModelCalculator:ViewModel() {
+class ViewModelCalculator:ViewModel() {
 
     var mathOperation = MutableLiveData<String>()
     var result = MutableLiveData<String>()
